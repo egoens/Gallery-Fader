@@ -132,7 +132,7 @@
 			
 			if(options.showCount) {
 				$('a.control_num:first').addClass('current');
-				$('.control_num').click(function() {
+				$('.control_num', obj).click(function() {
 					$('li.current',obj).fadeItOut();
 					$('a.current',obj).removeClass('current');
 					var show_num = Math.floor($(this).text()-1);
